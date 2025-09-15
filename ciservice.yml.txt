@@ -1,0 +1,23 @@
+name: Build ASP.NET MVC cat project
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup MSBuild path
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Build solution
+      run: msbuild Cat Facts Manager.sln /p:Configuration=Release
