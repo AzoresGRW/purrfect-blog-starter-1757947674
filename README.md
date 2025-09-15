@@ -1,6 +1,6 @@
 # GenericTemplate
 
-**[Insert a brief description of your application here. Describe its purpose, functionality, etc.]**
+An application that let's you consult, fetch and list several cat facts and allows you to save your favourice facts. This application allows you to create a a user and saves your information for future reference.  
 
 ## 🌐 Demo
 
